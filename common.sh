@@ -331,3 +331,7 @@ export TEST_CUSTOM_MAO=${TEST_CUSTOM_MAO:-false}
 
 # Set to true to enable RHCOS Live Image based installs
 export RHCOS_LIVE_IMAGES=${RHCOS_LIVE_IMAGES:-false}
+
+# Set to configure bootstrap VM baremetal network with static IP
+# (Currently this just expects a non-empty value, the IP is fixed to .9)
+export ENABLE_BOOTSTRAP_STATIC_IP=${ENABLE_BOOTSTRAP_STATIC_IP:-}

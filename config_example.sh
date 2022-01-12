@@ -254,6 +254,10 @@ set -x
 # Set the DHCP lease time
 #export DHCP_LEASE_EXPIRY=60
 
+# Configure a static IP for the bootstrap VM external NIC
+# (Currently this just expects a non-empty value, the IP is fixed to .9)
+# export ENABLE_BOOTSTRAP_STATIC_IP=true
+
 ##
 ## Multi-cluster/Hive variables
 ##
